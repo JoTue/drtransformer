@@ -1,0 +1,10 @@
+WARNING: Removing non-canonical base pair CA (73,75) from constraint
+WARNING: Removing non-canonical base pair UC (64,79) from constraint
+WARNING: Removing non-canonical base pair UC (58,87) from constraint
+WARNING: Removing non-canonical base pair GG (57,88) from constraint
+WARNING: Removing non-canonical base pair GA (56,89) from constraint
+WARNING: bases 56 and 89 (GA) can't pair!
+WARNING: bases 57 and 88 (GG) can't pair!
+WARNING: bases 58 and 87 (UC) can't pair!
+WARNING: bases 64 and 79 (UC) can't pair!
+WARNING: bases 73 and 75 (CA) can't pair!

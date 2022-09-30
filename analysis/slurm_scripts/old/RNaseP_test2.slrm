@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#SBATCH --job-name=RNaseP_test2
+#SBATCH --ntasks-per-node=16
+#SBATCH --ntasks-per-core=1
+#SBATCH --mem=10G
+#SBATCH --account=p71475
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=a01640204@unet.univie.ac.at  # your email address
+#SBATCH --output=RNaseP_test2_%j.out
+#SBATCH --error=RNaseP_test2_%j.err
+
+../scripts/analyze_db_cli.py -i ../rnastructure/data/RNaseP_test2.db -o ../slurm_out/

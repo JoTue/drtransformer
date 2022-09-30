@@ -1,0 +1,16 @@
+All entries:
+header		length	d_nat_sub	d_nat_tend	d_nat_tend_rev	d_sub_tend	d_sub_tend_rev
+ASE_00160	219		42.47		55.13		63.50			58.23		68.94
+ASE_00191	244		65.64		67.24		80.39			48.68		60.37
+ASE_00251	189		21.74		22.00		21.83			2.50		3.20
+ASE_00258	232		51.77		33.27		51.01			45.86		11.61
+normal+5 < subopt:
+header		length	d_nat_sub	d_nat_tend	d_nat_tend_rev	d_sub_tend	d_sub_tend_rev
+ASE_00258	232		51.77		33.27		51.01			45.86		11.61
+c_normal=1, c_reversed=0
+normal+5 < reversed:
+header		length	d_nat_sub	d_nat_tend	d_nat_tend_rev	d_sub_tend	d_sub_tend_rev
+ASE_00160	219		42.47		55.13		63.50			58.23		68.94
+ASE_00191	244		65.64		67.24		80.39			48.68		60.37
+ASE_00258	232		51.77		33.27		51.01			45.86		11.61
+c_normal=3, c_reversed=0, c_tie=1

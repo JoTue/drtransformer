@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#SBATCH --job-name=tRNA_all
+#SBATCH --ntasks-per-node=16
+#SBATCH --ntasks-per-core=1
+#SBATCH --mem=2G
+#SBATCH --account=p71475
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=a01640204@unet.univie.ac.at
+#SBATCH --output=tRNA_all_%j.out
+#SBATCH --error=tRNA_all_%j.err
+
+../scripts/analyze_db_cli.py -i ../rnastructure/data/tRNA.db -o ../slurm_out/ --o-prune 0.05 --t-fast 0.001

@@ -1,0 +1,249 @@
+WARNING: Removing non-canonical base pair AG (24,179) from constraint
+WARNING: Removing non-canonical base pair AG (21,182) from constraint
+WARNING: vrna_hc_add_from_db: Pairing partners (202, 205) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: Removing non-canonical base pair CA (196,207) from constraint
+WARNING: Removing non-canonical base pair UU (195,208) from constraint
+WARNING: Removing non-canonical base pair GA (192,213) from constraint
+WARNING: Removing non-canonical base pair GG (191,214) from constraint
+WARNING: Removing non-canonical base pair GA (190,215) from constraint
+WARNING: Removing non-canonical base pair UC (187,217) from constraint
+WARNING: Removing non-canonical base pair CC (18,220) from constraint
+WARNING: Removing non-canonical base pair CC (17,221) from constraint
+WARNING: Removing non-canonical base pair CC (15,226) from constraint
+WARNING: bases 15 and 226 (CC) can't pair!
+WARNING: bases 17 and 221 (CC) can't pair!
+WARNING: bases 18 and 220 (CC) can't pair!
+WARNING: bases 21 and 182 (AG) can't pair!
+WARNING: bases 24 and 179 (AG) can't pair!
+WARNING: bases 187 and 217 (UC) can't pair!
+WARNING: bases 190 and 215 (GA) can't pair!
+WARNING: bases 191 and 214 (GG) can't pair!
+WARNING: bases 192 and 213 (GA) can't pair!
+WARNING: bases 195 and 208 (UU) can't pair!
+WARNING: bases 196 and 207 (CA) can't pair!
+WARNING: Removing non-canonical base pair CA (22,182) from constraint
+WARNING: Removing non-canonical base pair GG (21,183) from constraint
+WARNING: Removing non-canonical base pair GA (203,207) from constraint
+WARNING: Removing non-canonical base pair AG (197,208) from constraint
+WARNING: Removing non-canonical base pair AG (196,209) from constraint
+WARNING: Removing non-canonical base pair AC (195,210) from constraint
+WARNING: Removing non-canonical base pair UC (188,218) from constraint
+WARNING: Removing non-canonical base pair CU (18,221) from constraint
+WARNING: Removing non-canonical base pair CC (17,222) from constraint
+WARNING: Removing non-canonical base pair CC (15,228) from constraint
+WARNING: bases 15 and 228 (CC) can't pair!
+WARNING: bases 17 and 222 (CC) can't pair!
+WARNING: bases 18 and 221 (CU) can't pair!
+WARNING: bases 21 and 183 (GG) can't pair!
+WARNING: bases 22 and 182 (CA) can't pair!
+WARNING: bases 188 and 218 (UC) can't pair!
+WARNING: bases 195 and 210 (AC) can't pair!
+WARNING: bases 196 and 209 (AG) can't pair!
+WARNING: bases 197 and 208 (AG) can't pair!
+WARNING: bases 203 and 207 (GA) can't pair!
+WARNING: Removing non-canonical base pair GG (24,178) from constraint
+WARNING: Removing non-canonical base pair GA (23,179) from constraint
+WARNING: Removing non-canonical base pair GG (22,180) from constraint
+WARNING: vrna_hc_add_from_db: Pairing partners (207, 209) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: Removing non-canonical base pair CC (205,211) from constraint
+WARNING: Removing non-canonical base pair GG (203,213) from constraint
+WARNING: Removing non-canonical base pair CC (199,214) from constraint
+WARNING: Removing non-canonical base pair UC (197,216) from constraint
+WARNING: Removing non-canonical base pair GG (195,218) from constraint
+WARNING: Removing non-canonical base pair GG (194,219) from constraint
+WARNING: Removing non-canonical base pair CA (187,220) from constraint
+WARNING: Removing non-canonical base pair CU (186,221) from constraint
+WARNING: Removing non-canonical base pair AC (185,222) from constraint
+WARNING: Removing non-canonical base pair UU (16,231) from constraint
+WARNING: Removing non-canonical base pair CU (15,232) from constraint
+WARNING: bases 15 and 232 (CU) can't pair!
+WARNING: bases 16 and 231 (UU) can't pair!
+WARNING: bases 22 and 180 (GG) can't pair!
+WARNING: bases 23 and 179 (GA) can't pair!
+WARNING: bases 24 and 178 (GG) can't pair!
+WARNING: bases 185 and 222 (AC) can't pair!
+WARNING: bases 186 and 221 (CU) can't pair!
+WARNING: bases 187 and 220 (CA) can't pair!
+WARNING: bases 194 and 219 (GG) can't pair!
+WARNING: bases 195 and 218 (GG) can't pair!
+WARNING: bases 197 and 216 (UC) can't pair!
+WARNING: bases 199 and 214 (CC) can't pair!
+WARNING: bases 203 and 213 (GG) can't pair!
+WARNING: bases 205 and 211 (CC) can't pair!
+WARNING: vrna_hc_add_from_db: Pairing partners (220, 222) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: Removing non-canonical base pair UC (213,229) from constraint
+WARNING: Removing non-canonical base pair CC (188,235) from constraint
+WARNING: Removing non-canonical base pair CA (187,236) from constraint
+WARNING: Removing non-canonical base pair AG (186,237) from constraint
+WARNING: Removing non-canonical base pair GG (7,244) from constraint
+WARNING: Removing non-canonical base pair AG (6,245) from constraint
+WARNING: Removing non-canonical base pair CC (1,247) from constraint
+WARNING: bases 1 and 247 (CC) can't pair!
+WARNING: bases 6 and 245 (AG) can't pair!
+WARNING: bases 7 and 244 (GG) can't pair!
+WARNING: bases 186 and 237 (AG) can't pair!
+WARNING: bases 187 and 236 (CA) can't pair!
+WARNING: bases 188 and 235 (CC) can't pair!
+WARNING: bases 213 and 229 (UC) can't pair!
+/bin/sh: line 1: 124942 Done                    echo CACAGAGCACGGUGGUGGCCAACAGCCACCCACGGCGACGUGCGGGACAGUGCCACAGAGAACAGACCGCCAGCGGCCCCGCGGCCUUCGGGCCACGGGGUGCGGGCAAGGGUGAAACGGUGAGGUAAGAGCUCACCAGCGACGUCGGCGACGGCGUCGGCUCGGUAAACCCCACCGGGAGCAAGACCAAGAGGGCGCUCCGGCGCCUGCGCUGACGGGCUGCUCGUCCGACGUCAGCGGGUAGGUCGCUCGAGGCACGCAGCAAUGCGUGACCCAGAUGGAUGGUCGCCCCCCAGCCCUCGGGCCGGGG
+     124943 Killed                  | DrTransformer --name drtr_RNaseP_A.erythreum --logfile --no-timecourse --o-prune 0.05
+/bin/sh: line 1: 373992 Done                    echo CACAGAGCACGGUGGUGGCCAACAGCCACCCACGGCGACGUGCGGGACAGUGCCACAGAGAACAGACCGCCAGCGGCCCCGCGGCCUUCGGGCCACGGGGUGCGGGCAAGGGUGAAACGGUGAGGUAAGAGCUCACCAGCGACGUCGGCGACGGCGUCGGCUCGGUAAACCCCACCGGGAGCAAGACCAAGAGGGCGCUCCGGCGCCUGCGCUGACGGGCUGCUCGUCCGACGUCAGCGGGUAGGUCGCUCGAGGCACGCAGCAAUGCGUGACCCAGAUGGAUGGUCGCCCCCCAGCCCUCGGGCCGGGG
+     373993 Killed                  | DrTransformer --name drtr_RNaseP_A.erythreum_rev --logfile --no-timecourse -rt --o-prune 0.05
+WARNING: Removing non-canonical base pair GG (68,181) from constraint
+WARNING: Removing non-canonical base pair GA (67,182) from constraint
+WARNING: Removing non-canonical base pair GG (66,183) from constraint
+WARNING: vrna_hc_add_from_db: Pairing partners (210, 212) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: Removing non-canonical base pair AC (208,214) from constraint
+WARNING: Removing non-canonical base pair CC (202,215) from constraint
+WARNING: Removing non-canonical base pair GG (201,216) from constraint
+WARNING: Removing non-canonical base pair CC (190,223) from constraint
+WARNING: Removing non-canonical base pair CU (189,224) from constraint
+WARNING: Removing non-canonical base pair UC (187,226) from constraint
+WARNING: Removing non-canonical base pair CA (59,235) from constraint
+WARNING: Removing non-canonical base pair AG (58,272) from constraint
+WARNING: Removing non-canonical base pair GG (57,273) from constraint
+WARNING: Removing non-canonical base pair CU (55,275) from constraint
+WARNING: Removing non-canonical base pair AC (51,278) from constraint
+WARNING: Removing non-canonical base pair CC (18,318) from constraint
+WARNING: Removing non-canonical base pair CC (17,319) from constraint
+WARNING: Removing non-canonical base pair AG (16,320) from constraint
+WARNING: Removing non-canonical base pair AG (15,321) from constraint
+WARNING: Removing non-canonical base pair CC (14,322) from constraint
+WARNING: bases 14 and 322 (CC) can't pair!
+WARNING: bases 15 and 321 (AG) can't pair!
+WARNING: bases 16 and 320 (AG) can't pair!
+WARNING: bases 17 and 319 (CC) can't pair!
+WARNING: bases 18 and 318 (CC) can't pair!
+WARNING: bases 51 and 278 (AC) can't pair!
+WARNING: bases 55 and 275 (CU) can't pair!
+WARNING: bases 57 and 273 (GG) can't pair!
+WARNING: bases 58 and 272 (AG) can't pair!
+WARNING: bases 59 and 235 (CA) can't pair!
+WARNING: bases 66 and 183 (GG) can't pair!
+WARNING: bases 67 and 182 (GA) can't pair!
+WARNING: bases 68 and 181 (GG) can't pair!
+WARNING: bases 187 and 226 (UC) can't pair!
+WARNING: bases 189 and 224 (CU) can't pair!
+WARNING: bases 190 and 223 (CC) can't pair!
+WARNING: bases 201 and 216 (GG) can't pair!
+WARNING: bases 202 and 215 (CC) can't pair!
+WARNING: bases 208 and 214 (AC) can't pair!
+/bin/sh: line 1: 34763 Done                    echo AAAGCAGGCCAGGCAACCGCUGCCUGCACCGCAAGGUGCAGGGGGAGGAAAGUCCGGACUCCACAGGGCAGGGUGUUGGCUAACAGCCAUCCACGGCAACGUGCGGAAUAGGGCCACAGAGACGAGUCUUGCCGCCGGGUUCGCCCGGCGGGAAGGGUGAAACGCGGUAACCUCCACCUGGAGCAAUCCCAAAUAGGCAGGCGAUGAAGCGGCCCGCUGAGUCUGCGGGUAGGGAGCUGGAGCCGGCUGGUAACAGCCGGCCUAGAGGAAUGGUUGUCACGCACCGUUUGCCGCAAGGCGGGCGGGGCGCACAGAAUCCGGCUUAUCGGCCUGCUUUGCUU
+     34764 Killed                  | DrTransformer --name drtr_RNaseP_A.eutrophus --logfile --no-timecourse --o-prune 0.05
+/bin/sh: line 1: 65694 Done                    echo AAAGCAGGCCAGGCAACCGCUGCCUGCACCGCAAGGUGCAGGGGGAGGAAAGUCCGGACUCCACAGGGCAGGGUGUUGGCUAACAGCCAUCCACGGCAACGUGCGGAAUAGGGCCACAGAGACGAGUCUUGCCGCCGGGUUCGCCCGGCGGGAAGGGUGAAACGCGGUAACCUCCACCUGGAGCAAUCCCAAAUAGGCAGGCGAUGAAGCGGCCCGCUGAGUCUGCGGGUAGGGAGCUGGAGCCGGCUGGUAACAGCCGGCCUAGAGGAAUGGUUGUCACGCACCGUUUGCCGCAAGGCGGGCGGGGCGCACAGAAUCCGGCUUAUCGGCCUGCUUUGCUU
+     65695 Killed                  | DrTransformer --name drtr_RNaseP_A.eutrophus_rev --logfile --no-timecourse -rt --o-prune 0.05
+WARNING: vrna_hc_add_from_db: Pairing partners (235, 237) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: Removing non-canonical base pair UC (228,244) from constraint
+WARNING: Removing non-canonical base pair CC (187,250) from constraint
+WARNING: Removing non-canonical base pair CA (186,251) from constraint
+WARNING: Removing non-canonical base pair AG (185,252) from constraint
+WARNING: Removing non-canonical base pair GG (7,259) from constraint
+WARNING: Removing non-canonical base pair AG (6,260) from constraint
+WARNING: Removing non-canonical base pair CU (1,262) from constraint
+WARNING: bases 1 and 262 (CU) can't pair!
+WARNING: bases 6 and 260 (AG) can't pair!
+WARNING: bases 7 and 259 (GG) can't pair!
+WARNING: bases 185 and 252 (AG) can't pair!
+WARNING: bases 186 and 251 (CA) can't pair!
+WARNING: bases 187 and 250 (CC) can't pair!
+WARNING: bases 228 and 244 (UC) can't pair!
+/bin/sh: line 1: 262635 Done                    echo CACAGAGCAACGGUGGUGGCUAACGGCCACCCACGGCGACGUGCGGGACAGUGCCACAGAAAUCAGACCGCCAGCGGCCGCCGCUCCUCGGAGCAGCGGUGCGGGUAAGGGUGAAACGGUGAGGUAAGAGCUCACCAGCGCUCCGGGUGACCGGGGCGGCUAGGUAAACCCCACCGGGAGCAAGACCAAGAGAGUCGCGUGGCGCUUCGGCGGUGCACGGCUUGCGCUGACGGGCUGCUCGUCCGAUGUCAGCGGGUAGGUUGCACGAGGCGUCCAGCAAUGGGCGUCCCAGAUGGAUGGUCGCCCACG
+     262636 Killed                  | DrTransformer --name drtr_RNaseP_A.fastidiosum --logfile --no-timecourse --o-prune 0.05
+WARNING: Removing non-canonical base pair GG (60,214) from constraint
+WARNING: Removing non-canonical base pair GA (59,215) from constraint
+WARNING: Removing non-canonical base pair GG (58,216) from constraint
+WARNING: vrna_hc_add_from_db: Pairing partners (243, 245) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: Removing non-canonical base pair CC (241,247) from constraint
+WARNING: Removing non-canonical base pair CC (240,248) from constraint
+WARNING: Removing non-canonical base pair AG (239,249) from constraint
+WARNING: Removing non-canonical base pair CC (235,250) from constraint
+WARNING: Removing non-canonical base pair GG (234,251) from constraint
+WARNING: Removing non-canonical base pair CA (223,256) from constraint
+WARNING: Removing non-canonical base pair CU (222,257) from constraint
+WARNING: Removing non-canonical base pair AG (221,258) from constraint
+WARNING: Removing non-canonical base pair UU (52,267) from constraint
+WARNING: Removing non-canonical base pair CU (51,268) from constraint
+WARNING: Removing non-canonical base pair GG (50,305) from constraint
+WARNING: Removing non-canonical base pair GG (49,306) from constraint
+WARNING: Removing non-canonical base pair CC (47,308) from constraint
+WARNING: Removing non-canonical base pair AC (43,311) from constraint
+WARNING: Removing non-canonical base pair AC (42,322) from constraint
+WARNING: Removing non-canonical base pair CC (18,323) from constraint
+WARNING: Removing non-canonical base pair CC (17,324) from constraint
+WARNING: Removing non-canonical base pair AG (16,325) from constraint
+WARNING: Removing non-canonical base pair GG (15,326) from constraint
+WARNING: Removing non-canonical base pair CC (14,327) from constraint
+WARNING: bases 14 and 327 (CC) can't pair!
+WARNING: bases 15 and 326 (GG) can't pair!
+WARNING: bases 16 and 325 (AG) can't pair!
+WARNING: bases 17 and 324 (CC) can't pair!
+WARNING: bases 18 and 323 (CC) can't pair!
+WARNING: bases 42 and 322 (AC) can't pair!
+WARNING: bases 43 and 311 (AC) can't pair!
+WARNING: bases 47 and 308 (CC) can't pair!
+WARNING: bases 49 and 306 (GG) can't pair!
+WARNING: bases 50 and 305 (GG) can't pair!
+WARNING: bases 51 and 268 (CU) can't pair!
+WARNING: bases 52 and 267 (UU) can't pair!
+WARNING: bases 58 and 216 (GG) can't pair!
+WARNING: bases 59 and 215 (GA) can't pair!
+WARNING: bases 60 and 214 (GG) can't pair!
+WARNING: bases 221 and 258 (AG) can't pair!
+WARNING: bases 222 and 257 (CU) can't pair!
+WARNING: bases 223 and 256 (CA) can't pair!
+WARNING: bases 234 and 251 (GG) can't pair!
+WARNING: bases 235 and 250 (CC) can't pair!
+WARNING: bases 239 and 249 (AG) can't pair!
+WARNING: bases 240 and 248 (CC) can't pair!
+WARNING: bases 241 and 247 (CC) can't pair!
+WARNING: Removing non-canonical base pair GG (60,212) from constraint
+WARNING: Removing non-canonical base pair GA (59,213) from constraint
+WARNING: Removing non-canonical base pair GG (58,214) from constraint
+WARNING: vrna_hc_add_from_db: Pairing partners (241, 243) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: Removing non-canonical base pair CC (239,245) from constraint
+WARNING: Removing non-canonical base pair CC (238,246) from constraint
+WARNING: Removing non-canonical base pair AG (237,247) from constraint
+WARNING: Removing non-canonical base pair CC (233,248) from constraint
+WARNING: Removing non-canonical base pair GG (232,249) from constraint
+WARNING: Removing non-canonical base pair CA (221,254) from constraint
+WARNING: Removing non-canonical base pair CC (220,255) from constraint
+WARNING: Removing non-canonical base pair AG (219,256) from constraint
+WARNING: Removing non-canonical base pair UU (52,265) from constraint
+WARNING: Removing non-canonical base pair CU (51,266) from constraint
+WARNING: Removing non-canonical base pair GG (50,303) from constraint
+WARNING: Removing non-canonical base pair GG (49,304) from constraint
+WARNING: Removing non-canonical base pair CC (47,306) from constraint
+WARNING: Removing non-canonical base pair AC (43,309) from constraint
+WARNING: Removing non-canonical base pair AC (42,320) from constraint
+WARNING: Removing non-canonical base pair CC (18,321) from constraint
+WARNING: Removing non-canonical base pair CC (17,322) from constraint
+WARNING: Removing non-canonical base pair AG (16,323) from constraint
+WARNING: Removing non-canonical base pair GG (15,324) from constraint
+WARNING: Removing non-canonical base pair CC (14,325) from constraint
+WARNING: bases 14 and 325 (CC) can't pair!
+WARNING: bases 15 and 324 (GG) can't pair!
+WARNING: bases 16 and 323 (AG) can't pair!
+WARNING: bases 17 and 322 (CC) can't pair!
+WARNING: bases 18 and 321 (CC) can't pair!
+WARNING: bases 42 and 320 (AC) can't pair!
+WARNING: bases 43 and 309 (AC) can't pair!
+WARNING: bases 47 and 306 (CC) can't pair!
+WARNING: bases 49 and 304 (GG) can't pair!
+WARNING: bases 50 and 303 (GG) can't pair!
+WARNING: bases 51 and 266 (CU) can't pair!
+WARNING: bases 52 and 265 (UU) can't pair!
+WARNING: bases 58 and 214 (GG) can't pair!
+WARNING: bases 59 and 213 (GA) can't pair!
+WARNING: bases 60 and 212 (GG) can't pair!
+WARNING: bases 219 and 256 (AG) can't pair!
+WARNING: bases 220 and 255 (CC) can't pair!
+WARNING: bases 221 and 254 (CA) can't pair!
+WARNING: bases 232 and 249 (GG) can't pair!
+WARNING: bases 233 and 248 (CC) can't pair!
+WARNING: bases 237 and 247 (AG) can't pair!
+WARNING: bases 238 and 246 (CC) can't pair!
+WARNING: bases 239 and 245 (CC) can't pair!
+/bin/sh: line 1: 37756 Done                    echo GGAGUGGGCCAGGCGACCGCCGCGGAGCAAUCCGGGGAGGAAAGUCCGGGCUCCAUAGGGCAAGGCGCCGGUUAACGGCCGGGGGGCGUGAGCCUACGGAAAGUGCCACAGAAAAUAUACCGCCAAGCGCGUAAGCGCGGUAAGGGUGAAAAGGUGCGGUAAGAGCGCACCGCAUUUCCGGUAACGGAAAUGGCAGGGAAAACCCCGCCUGGAGCAAGACCAAAUAGGCGUGCGAUACCGUGGCCCGCGGUGCACGCGGGUAGGUUGCUGGAGCCUGUGCGUAAGUGCAGGCCUAGAGGAAUGGUCGUCCACGACAGAACCCGGCUUAUCGGCCCACUCCAAUU
+     37757 Killed                  | DrTransformer --name drtr_RNaseP_A.ferrooxidans --logfile --no-timecourse --o-prune 0.05
+slurmstepd: error: *** JOB 1732819 ON n401-009 CANCELLED AT 2021-12-14T21:14:22 ***
+slurmstepd: error: Detected 6 oom-kill event(s) in step 1732819.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

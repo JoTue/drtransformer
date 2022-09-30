@@ -1,0 +1,14 @@
+WARNING: Removing non-canonical base pair CA (57,59) from constraint
+WARNING: Removing non-canonical base pair UC (55,60) from constraint
+WARNING: Removing non-canonical base pair GG (49,70) from constraint
+WARNING: Removing non-canonical base pair CA (47,73) from constraint
+WARNING: vrna_hc_add_from_db: Pairing partners (185, 186) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: vrna_hc_add_from_db: Pairing partners (184, 187) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: Removing non-canonical base pair GA (181,200) from constraint
+WARNING: Removing non-canonical base pair UC (177,202) from constraint
+WARNING: bases 47 and 73 (CA) can't pair!
+WARNING: bases 49 and 70 (GG) can't pair!
+WARNING: bases 55 and 60 (UC) can't pair!
+WARNING: bases 57 and 59 (CA) can't pair!
+WARNING: bases 177 and 202 (UC) can't pair!
+WARNING: bases 181 and 200 (GA) can't pair!

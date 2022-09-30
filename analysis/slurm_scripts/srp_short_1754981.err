@@ -1,0 +1,6 @@
+WARNING: vrna_hc_add_from_db: Pairing partners (5, 8) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: vrna_hc_add_from_db: Pairing partners (5, 8) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: vrna_hc_add_from_db: Pairing partners (31, 34) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: vrna_hc_add_from_db: Pairing partners (26, 29) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: vrna_hc_add_from_db: Pairing partners (11, 14) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: vrna_hc_add_from_db: Pairing partners (28, 31) violate minimum loop size settings of 3nt, omitting constraint

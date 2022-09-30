@@ -1,0 +1,27 @@
+WARNING: Removing non-canonical base pair UC (116,117) from constraint
+WARNING: vrna_hc_add_from_db: Pairing partners (115, 118) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: Removing non-canonical base pair CC (113,120) from constraint
+WARNING: Removing non-canonical base pair AG (112,121) from constraint
+WARNING: Removing non-canonical base pair AA (111,122) from constraint
+WARNING: Removing non-canonical base pair GG (99,131) from constraint
+WARNING: Removing non-canonical base pair GG (96,134) from constraint
+WARNING: Removing non-canonical base pair CC (95,135) from constraint
+WARNING: Removing non-canonical base pair CA (93,179) from constraint
+WARNING: Removing non-canonical base pair CA (92,180) from constraint
+WARNING: Removing non-canonical base pair AG (91,182) from constraint
+WARNING: Removing non-canonical base pair UU (64,183) from constraint
+WARNING: Removing non-canonical base pair UU (63,184) from constraint
+WARNING: Removing non-canonical base pair CA (62,187) from constraint
+WARNING: bases 62 and 187 (CA) can't pair!
+WARNING: bases 63 and 184 (UU) can't pair!
+WARNING: bases 64 and 183 (UU) can't pair!
+WARNING: bases 91 and 182 (AG) can't pair!
+WARNING: bases 92 and 180 (CA) can't pair!
+WARNING: bases 93 and 179 (CA) can't pair!
+WARNING: bases 95 and 135 (CC) can't pair!
+WARNING: bases 96 and 134 (GG) can't pair!
+WARNING: bases 99 and 131 (GG) can't pair!
+WARNING: bases 111 and 122 (AA) can't pair!
+WARNING: bases 112 and 121 (AG) can't pair!
+WARNING: bases 113 and 120 (CC) can't pair!
+WARNING: bases 116 and 117 (UC) can't pair!

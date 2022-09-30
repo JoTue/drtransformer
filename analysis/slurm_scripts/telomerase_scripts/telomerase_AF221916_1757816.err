@@ -1,0 +1,37 @@
+WARNING: Removing non-canonical base pair UC (71,72) from constraint
+WARNING: vrna_hc_add_from_db: Pairing partners (70, 73) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: Removing non-canonical base pair CC (68,75) from constraint
+WARNING: Removing non-canonical base pair AG (67,76) from constraint
+WARNING: Removing non-canonical base pair GG (66,77) from constraint
+WARNING: Removing non-canonical base pair CC (64,79) from constraint
+WARNING: Removing non-canonical base pair GA (63,84) from constraint
+WARNING: Removing non-canonical base pair GA (54,85) from constraint
+WARNING: Removing non-canonical base pair GA (51,93) from constraint
+WARNING: Removing non-canonical base pair CC (50,94) from constraint
+WARNING: Removing non-canonical base pair CC (49,95) from constraint
+WARNING: Removing non-canonical base pair CU (48,96) from constraint
+WARNING: Removing non-canonical base pair GG (47,97) from constraint
+WARNING: Removing non-canonical base pair UC (38,98) from constraint
+WARNING: Removing non-canonical base pair CC (35,101) from constraint
+WARNING: Removing non-canonical base pair GA (27,131) from constraint
+WARNING: Removing non-canonical base pair GA (26,132) from constraint
+WARNING: Removing non-canonical base pair GG (25,134) from constraint
+WARNING: Removing non-canonical base pair UU (24,135) from constraint
+WARNING: bases 24 and 135 (UU) can't pair!
+WARNING: bases 25 and 134 (GG) can't pair!
+WARNING: bases 26 and 132 (GA) can't pair!
+WARNING: bases 27 and 131 (GA) can't pair!
+WARNING: bases 35 and 101 (CC) can't pair!
+WARNING: bases 38 and 98 (UC) can't pair!
+WARNING: bases 47 and 97 (GG) can't pair!
+WARNING: bases 48 and 96 (CU) can't pair!
+WARNING: bases 49 and 95 (CC) can't pair!
+WARNING: bases 50 and 94 (CC) can't pair!
+WARNING: bases 51 and 93 (GA) can't pair!
+WARNING: bases 54 and 85 (GA) can't pair!
+WARNING: bases 63 and 84 (GA) can't pair!
+WARNING: bases 64 and 79 (CC) can't pair!
+WARNING: bases 66 and 77 (GG) can't pair!
+WARNING: bases 67 and 76 (AG) can't pair!
+WARNING: bases 68 and 75 (CC) can't pair!
+WARNING: bases 71 and 72 (UC) can't pair!

@@ -1,0 +1,68 @@
+WARNING: Removing non-canonical base pair UC (59,62) from constraint
+WARNING: Removing non-canonical base pair CU (57,64) from constraint
+WARNING: Removing non-canonical base pair CC (56,65) from constraint
+WARNING: Removing non-canonical base pair GA (53,74) from constraint
+WARNING: Removing non-canonical base pair AG (51,76) from constraint
+WARNING: Removing non-canonical base pair GG (50,77) from constraint
+WARNING: Removing non-canonical base pair GG (154,155) from constraint
+WARNING: vrna_hc_add_from_db: Pairing partners (153, 156) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: Removing non-canonical base pair AC (152,157) from constraint
+WARNING: Removing non-canonical base pair CC (145,177) from constraint
+WARNING: Removing non-canonical base pair GG (144,178) from constraint
+WARNING: Removing non-canonical base pair GA (143,179) from constraint
+WARNING: Removing non-canonical base pair CC (139,189) from constraint
+WARNING: Removing non-canonical base pair GG (138,190) from constraint
+WARNING: Removing non-canonical base pair CU (137,191) from constraint
+WARNING: Removing non-canonical base pair UC (136,192) from constraint
+WARNING: Removing non-canonical base pair CA (135,193) from constraint
+WARNING: Removing non-canonical base pair AC (213,218) from constraint
+WARNING: Removing non-canonical base pair UC (211,219) from constraint
+WARNING: Removing non-canonical base pair GA (206,222) from constraint
+WARNING: Removing non-canonical base pair GG (205,223) from constraint
+WARNING: Removing non-canonical base pair GG (204,224) from constraint
+WARNING: Removing non-canonical base pair CU (203,234) from constraint
+WARNING: Removing non-canonical base pair UU (201,237) from constraint
+WARNING: Removing non-canonical base pair CC (264,265) from constraint
+WARNING: vrna_hc_add_from_db: Pairing partners (263, 266) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: Removing non-canonical base pair CU (261,270) from constraint
+WARNING: Removing non-canonical base pair UC (260,275) from constraint
+WARNING: Removing non-canonical base pair GG (258,277) from constraint
+WARNING: Removing non-canonical base pair GG (256,289) from constraint
+WARNING: Removing non-canonical base pair CA (255,290) from constraint
+WARNING: Removing non-canonical base pair GG (252,293) from constraint
+WARNING: Removing non-canonical base pair GA (246,294) from constraint
+WARNING: Removing non-canonical base pair CA (245,295) from constraint
+WARNING: Removing non-canonical base pair CC (244,296) from constraint
+WARNING: bases 50 and 77 (GG) can't pair!
+WARNING: bases 51 and 76 (AG) can't pair!
+WARNING: bases 53 and 74 (GA) can't pair!
+WARNING: bases 56 and 65 (CC) can't pair!
+WARNING: bases 57 and 64 (CU) can't pair!
+WARNING: bases 59 and 62 (UC) can't pair!
+WARNING: bases 135 and 193 (CA) can't pair!
+WARNING: bases 136 and 192 (UC) can't pair!
+WARNING: bases 137 and 191 (CU) can't pair!
+WARNING: bases 138 and 190 (GG) can't pair!
+WARNING: bases 139 and 189 (CC) can't pair!
+WARNING: bases 143 and 179 (GA) can't pair!
+WARNING: bases 144 and 178 (GG) can't pair!
+WARNING: bases 145 and 177 (CC) can't pair!
+WARNING: bases 152 and 157 (AC) can't pair!
+WARNING: bases 154 and 155 (GG) can't pair!
+WARNING: bases 201 and 237 (UU) can't pair!
+WARNING: bases 203 and 234 (CU) can't pair!
+WARNING: bases 204 and 224 (GG) can't pair!
+WARNING: bases 205 and 223 (GG) can't pair!
+WARNING: bases 206 and 222 (GA) can't pair!
+WARNING: bases 211 and 219 (UC) can't pair!
+WARNING: bases 213 and 218 (AC) can't pair!
+WARNING: bases 244 and 296 (CC) can't pair!
+WARNING: bases 245 and 295 (CA) can't pair!
+WARNING: bases 246 and 294 (GA) can't pair!
+WARNING: bases 252 and 293 (GG) can't pair!
+WARNING: bases 255 and 290 (CA) can't pair!
+WARNING: bases 256 and 289 (GG) can't pair!
+WARNING: bases 258 and 277 (GG) can't pair!
+WARNING: bases 260 and 275 (UC) can't pair!
+WARNING: bases 261 and 270 (CU) can't pair!
+WARNING: bases 264 and 265 (CC) can't pair!

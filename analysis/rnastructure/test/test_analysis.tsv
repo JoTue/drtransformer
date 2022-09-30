@@ -1,0 +1,11 @@
+All entries:
+header	length	d_nat_sub	d_nat_tend	d_nat_tend_rev	d_sub_tend	d_sub_tend_rev
+5s_Zygoascus-hellenicus-1	120	13.83	13.17	13.16	4.19	4.16
+5s_Zymomonas-mobilis-1	121	33.28	30.72	30.89	30.52	30.11
+5s_uncultured-euryarchaeote-37F11-1	122	16.50	19.75	17.82	7.62	9.39
+normal+5 < subopt:
+header	length	d_nat_sub	d_nat_tend	d_nat_tend_rev	d_sub_tend	d_sub_tend_rev
+c_normal=0, c_reversed=0
+normal+5 < reversed:
+header	length	d_nat_sub	d_nat_tend	d_nat_tend_rev	d_sub_tend	d_sub_tend_rev
+c_normal=0, c_reversed=0, c_tie=3

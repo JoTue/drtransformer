@@ -1,0 +1,1 @@
+rnastrand_c.db: command: RNAfold --noPS --canonicalBPonly --noLP -C

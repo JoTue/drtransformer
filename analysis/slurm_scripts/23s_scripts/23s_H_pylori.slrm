@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#SBATCH --job-name=23s_H_pylori
+#SBATCH --ntasks-per-node=16
+#SBATCH --ntasks-per-core=1
+#SBATCH --mem=8G
+#SBATCH --account=p71475
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=a01640204@unet.univie.ac.at
+#SBATCH --output=23s_H_pylori_%j.out
+#SBATCH --error=23s_H_pylori_%j.err
+
+
+../../scripts/analyze_db_cli.py -i ../../rnastructure/data/23s_separate/23s_H_pylori.db -o ../../slurm_out/23s/ --o-prune 0.1 --t-fast 0.002

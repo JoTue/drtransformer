@@ -1,0 +1,1 @@
+cat tmp_normal/drtr_normal-23_rates.txt | treekin --p0 1=0.09670493059394891 --p0 2=0.9032950694060511

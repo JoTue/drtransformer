@@ -1,0 +1,47 @@
+All entries:
+header	length	d_nat_sub	d_nat_tend	d_nat_tend_rev	d_sub_tend	d_sub_tend_rev
+grp1_a.I1.b.Dermocarpa.sp.ATCC29371.C3.tMET	268	52.99	57.01	84.82	43.40	88.12
+grp1_a.I1.b.Phormidium.sp.N182.C3.tLEU	270	90.81	97.52	97.52	60.63	104.01
+grp1_a.I1.b.S.hofmanii.C3.tMET	251	43.58	43.21	61.05	27.36	45.27
+grp1_a.I1.b.Synechococcus.sp2.C3.tLEU	265	41.57	58.97	71.20	49.38	62.32
+grp1_a.I1.e.C.grayi.UNK.SSU.1046	283	71.96	59.03	59.78	65.99	92.27
+grp1_a.I1.e.C.merochlorophea.UNK.SSU.1046	267	75.49	64.65	96.50	62.44	98.11
+grp1_a.I1.e.C.merochlorophea.UNK.SSU.1210	267	83.26	74.57	67.46	58.87	50.13
+grp1_a.I1.e.C.merochlorophea.UNK.SSU.1389	265	50.71	54.57	68.42	32.59	73.16
+grp1_a.I1.e.C.merochlorophea.UNK.SSU.1516	274	107.43	108.61	104.47	81.50	99.01
+grp1_a.I1.e.L.dispersa.UNK.SSU.1046	255	85.64	78.26	108.59	107.14	123.45
+grp1_a.I1.e.L.dispersa.UNK.SSU.114	211	69.64	82.50	91.85	70.52	64.60
+grp1_a.I1.e.L.dispersa.UNK.SSU.1210	221	87.26	92.27	88.63	86.90	58.25
+grp1_a.I1.e.L.dispersa.UNK.SSU.1516	240	85.85	69.17	73.46	86.26	92.22
+grp1_a.I1.e.L.dispersa.UNK.SSU.287	229	135.55	114.78	122.50	123.33	41.97
+grp1_a.I1.e.L.dispersa.UNK.SSU.789	218	101.02	107.20	107.26	67.63	90.42
+grp1_a.I1.e.S.paniceum.UNK.SSU.1052	240	65.76	72.41	69.22	46.99	38.87
+grp1_a.I1.e.S.paniceum.UNK.SSU.114	210	33.76	45.39	43.79	34.49	30.22
+grp1_a.I1.e.S.paniceum.UNK.SSU.1210	260	70.48	100.86	77.39	77.51	35.61
+grp1_a.I1.e.S.paniceum.UNK.SSU.1506	259	56.98	84.66	69.79	64.92	54.31
+grp1_a.I1.e.S.paniceum.UNK.SSU.287	234	78.23	63.09	96.09	76.02	100.41
+grp1_a.I1.m.M.grisea.B2.ND1	285	89.17	67.24	91.93	53.65	74.31
+normal+5 < subopt:
+header	length	d_nat_sub	d_nat_tend	d_nat_tend_rev	d_sub_tend	d_sub_tend_rev
+grp1_a.I1.e.C.grayi.UNK.SSU.1046	283	71.96	59.03	59.78	65.99	92.27
+grp1_a.I1.e.C.merochlorophea.UNK.SSU.1046	267	75.49	64.65	96.50	62.44	98.11
+grp1_a.I1.e.C.merochlorophea.UNK.SSU.1210	267	83.26	74.57	67.46	58.87	50.13
+grp1_a.I1.e.L.dispersa.UNK.SSU.1046	255	85.64	78.26	108.59	107.14	123.45
+grp1_a.I1.e.L.dispersa.UNK.SSU.1516	240	85.85	69.17	73.46	86.26	92.22
+grp1_a.I1.e.L.dispersa.UNK.SSU.287	229	135.55	114.78	122.50	123.33	41.97
+grp1_a.I1.e.S.paniceum.UNK.SSU.287	234	78.23	63.09	96.09	76.02	100.41
+grp1_a.I1.m.M.grisea.B2.ND1	285	89.17	67.24	91.93	53.65	74.31
+c_normal=8, c_reversed=4
+normal+5 < reversed:
+header	length	d_nat_sub	d_nat_tend	d_nat_tend_rev	d_sub_tend	d_sub_tend_rev
+grp1_a.I1.b.Dermocarpa.sp.ATCC29371.C3.tMET	268	52.99	57.01	84.82	43.40	88.12
+grp1_a.I1.b.S.hofmanii.C3.tMET	251	43.58	43.21	61.05	27.36	45.27
+grp1_a.I1.b.Synechococcus.sp2.C3.tLEU	265	41.57	58.97	71.20	49.38	62.32
+grp1_a.I1.e.C.merochlorophea.UNK.SSU.1046	267	75.49	64.65	96.50	62.44	98.11
+grp1_a.I1.e.C.merochlorophea.UNK.SSU.1389	265	50.71	54.57	68.42	32.59	73.16
+grp1_a.I1.e.L.dispersa.UNK.SSU.1046	255	85.64	78.26	108.59	107.14	123.45
+grp1_a.I1.e.L.dispersa.UNK.SSU.114	211	69.64	82.50	91.85	70.52	64.60
+grp1_a.I1.e.L.dispersa.UNK.SSU.287	229	135.55	114.78	122.50	123.33	41.97
+grp1_a.I1.e.S.paniceum.UNK.SSU.287	234	78.23	63.09	96.09	76.02	100.41
+grp1_a.I1.m.M.grisea.B2.ND1	285	89.17	67.24	91.93	53.65	74.31
+c_normal=10, c_reversed=3, c_tie=8

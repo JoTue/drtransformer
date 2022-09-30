@@ -1,0 +1,17 @@
+WARNING: vrna_hc_add_from_db: Pairing partners (475, 477) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: Removing non-canonical base pair GG (467,480) from constraint
+WARNING: Removing non-canonical base pair CC (466,481) from constraint
+WARNING: Removing non-canonical base pair CC (465,489) from constraint
+WARNING: Removing non-canonical base pair CC (460,490) from constraint
+WARNING: Removing non-canonical base pair GG (459,491) from constraint
+WARNING: Removing non-canonical base pair GG (458,492) from constraint
+WARNING: bases 458 and 492 (GG) can't pair!
+WARNING: bases 459 and 491 (GG) can't pair!
+WARNING: bases 460 and 490 (CC) can't pair!
+WARNING: bases 465 and 489 (CC) can't pair!
+WARNING: bases 466 and 481 (CC) can't pair!
+WARNING: bases 467 and 480 (GG) can't pair!
+/bin/sh: line 1: 292098 Done                    echo AUUCUGGUUGAUCCUGCCAGAGGCCGCUGCUAUCCGGCUGGGACUAAGCCAUGCGAGUCAAGGGGCUUGUAUCCCUUCGGGGAUGCAAGCACCGGCGGACGGCUCAGUAACACGUGGACAACCUGCCCUCGGGUGGGGGAUAACCCCGGGAAACUGGGGCUAAUCCCCCAUAGGGGAUGGGUACUGGAAUGUCCCAUCUCCGAAAGCGCUUAGCGCCCGAGGAUGGGUCUGCGGCGGAUUAGGUUGUUGGUGGGGUAACGGCCCACCAAGCCGAAGAUCCGUACGGGCCAUGAGAGUGGGAGCCCGGAGAUGGACCCUGAGACACGGGUCCAGGCCCUACGGGGCGCAGCAGGCGCGAAACCUCCGCAAUGCGGGAAACCGCGACGGGGUCAGCCGGAGUGCUCGCGCAUCGCGCGGGCUGUCGGGGUGCCUAAAAAGCACCCCACAGCAAGGGCCGGGCAAGGCCGGUGGCAGCCGCCGCGGUAAUACCGGCGGCCCGAGUGGCGGCCACU
+     292099 Killed                  | DrTransformer --name drtr_16s_A.fulgidus_domain1 --logfile --no-timecourse --o-prune 0.05 --t-end 60 --t-fast 0.001
+slurmstepd: error: *** JOB 1747861 ON n401-001 CANCELLED AT 2021-12-30T12:18:29 DUE TO TIME LIMIT ***
+slurmstepd: error: Detected 1 oom-kill event(s) in step 1747861.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

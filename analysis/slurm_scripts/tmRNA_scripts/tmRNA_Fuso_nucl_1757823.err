@@ -1,0 +1,81 @@
+WARNING: vrna_hc_add_from_db: Pairing partners (58, 60) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: Removing non-canonical base pair UU (56,62) from constraint
+WARNING: Removing non-canonical base pair AA (49,71) from constraint
+WARNING: Removing non-canonical base pair CA (48,73) from constraint
+WARNING: vrna_hc_add_from_db: Pairing partners (149, 150) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: Removing non-canonical base pair AG (148,151) from constraint
+WARNING: Removing non-canonical base pair UU (145,154) from constraint
+WARNING: Removing non-canonical base pair CU (144,156) from constraint
+WARNING: Removing non-canonical base pair UU (143,157) from constraint
+WARNING: Removing non-canonical base pair UC (140,158) from constraint
+WARNING: Removing non-canonical base pair CA (138,161) from constraint
+WARNING: Removing non-canonical base pair AG (137,162) from constraint
+WARNING: Removing non-canonical base pair AG (136,163) from constraint
+WARNING: Removing non-canonical base pair GG (133,165) from constraint
+WARNING: Removing non-canonical base pair GG (132,173) from constraint
+WARNING: Removing non-canonical base pair UU (131,174) from constraint
+WARNING: Removing non-canonical base pair CU (129,176) from constraint
+WARNING: Removing non-canonical base pair CA (128,177) from constraint
+WARNING: Removing non-canonical base pair AG (127,178) from constraint
+WARNING: Removing non-canonical base pair CA (126,179) from constraint
+WARNING: Removing non-canonical base pair AG (201,202) from constraint
+WARNING: vrna_hc_add_from_db: Pairing partners (200, 203) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: Removing non-canonical base pair UU (199,204) from constraint
+WARNING: Removing non-canonical base pair CU (198,205) from constraint
+WARNING: Removing non-canonical base pair CU (196,207) from constraint
+WARNING: Removing non-canonical base pair UU (190,216) from constraint
+WARNING: Removing non-canonical base pair AA (188,218) from constraint
+WARNING: Removing non-canonical base pair AG (187,219) from constraint
+WARNING: Removing non-canonical base pair AG (185,221) from constraint
+WARNING: Removing non-canonical base pair CA (183,223) from constraint
+WARNING: Removing non-canonical base pair GG (248,249) from constraint
+WARNING: Removing non-canonical base pair CU (246,252) from constraint
+WARNING: Removing non-canonical base pair AA (245,253) from constraint
+WARNING: Removing non-canonical base pair UU (243,255) from constraint
+WARNING: Removing non-canonical base pair UU (242,256) from constraint
+WARNING: Removing non-canonical base pair GA (241,257) from constraint
+WARNING: Removing non-canonical base pair CA (238,260) from constraint
+WARNING: Removing non-canonical base pair AC (235,261) from constraint
+WARNING: Removing non-canonical base pair UU (233,271) from constraint
+WARNING: Removing non-canonical base pair GG (232,273) from constraint
+WARNING: Removing non-canonical base pair GA (226,277) from constraint
+WARNING: Removing non-canonical base pair UC (224,278) from constraint
+WARNING: bases 48 and 73 (CA) can't pair!
+WARNING: bases 49 and 71 (AA) can't pair!
+WARNING: bases 56 and 62 (UU) can't pair!
+WARNING: bases 126 and 179 (CA) can't pair!
+WARNING: bases 127 and 178 (AG) can't pair!
+WARNING: bases 128 and 177 (CA) can't pair!
+WARNING: bases 129 and 176 (CU) can't pair!
+WARNING: bases 131 and 174 (UU) can't pair!
+WARNING: bases 132 and 173 (GG) can't pair!
+WARNING: bases 133 and 165 (GG) can't pair!
+WARNING: bases 136 and 163 (AG) can't pair!
+WARNING: bases 137 and 162 (AG) can't pair!
+WARNING: bases 138 and 161 (CA) can't pair!
+WARNING: bases 140 and 158 (UC) can't pair!
+WARNING: bases 143 and 157 (UU) can't pair!
+WARNING: bases 144 and 156 (CU) can't pair!
+WARNING: bases 145 and 154 (UU) can't pair!
+WARNING: bases 148 and 151 (AG) can't pair!
+WARNING: bases 183 and 223 (CA) can't pair!
+WARNING: bases 185 and 221 (AG) can't pair!
+WARNING: bases 187 and 219 (AG) can't pair!
+WARNING: bases 188 and 218 (AA) can't pair!
+WARNING: bases 190 and 216 (UU) can't pair!
+WARNING: bases 196 and 207 (CU) can't pair!
+WARNING: bases 198 and 205 (CU) can't pair!
+WARNING: bases 199 and 204 (UU) can't pair!
+WARNING: bases 201 and 202 (AG) can't pair!
+WARNING: bases 224 and 278 (UC) can't pair!
+WARNING: bases 226 and 277 (GA) can't pair!
+WARNING: bases 232 and 273 (GG) can't pair!
+WARNING: bases 233 and 271 (UU) can't pair!
+WARNING: bases 235 and 261 (AC) can't pair!
+WARNING: bases 238 and 260 (CA) can't pair!
+WARNING: bases 241 and 257 (GA) can't pair!
+WARNING: bases 242 and 256 (UU) can't pair!
+WARNING: bases 243 and 255 (UU) can't pair!
+WARNING: bases 245 and 253 (AA) can't pair!
+WARNING: bases 246 and 252 (CU) can't pair!
+WARNING: bases 248 and 249 (GG) can't pair!

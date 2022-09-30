@@ -1,0 +1,31 @@
+{
+    "tmRNA_Fuso.nucl._TRW-393480_1-344": {
+        "seq": "GGGGAUGCAAAGGUUUCGACGGGGUUGUGAGGUUAUAGGUAGCAAGUCAGGUUUGUCGCUGUGAAAGACUAAACACAUCGUUUAGAUGGAAACAAAGAAUACGCUUUAGCUGCUUAGUUCAGCUACACCUUGGAUAACUUAUUCUAUACGGGUUUUUCAAAGGUGUUGACUAGUAUAGAUUACCAUAAAUGAUUUCUCUAAGUUUAUGGGACAUUUUAGAGGAUAGUUUUAGUUAGCCCUGUUUACGGGAGUAAUUAUUACGAAAUUUAAUAGUAAACUAAACUUGUAGAAGCUUAUGGUCGUUAUGAUUUCGGACACGAGUUCGACUCUCGUCAUCUCCACCA",
+        "nat_ss": "(((((((............((((((((.(.((((((((((..(((((((.(..(.(.(.).)).....).).).................................((((((.......))))))(((((((((.(((((..((((((())))).)))).))))).......)))))))...((((((((...(((((((())))))))......))))))))(.((..((((((..(..((((((.()..))))))..)).).......).))))))...))))).....)))))))))).)..))))))))...(((((.......))))))))))))....",
+        "seqlen": 344,
+        "N_count": 0,
+        "long_unpaired": 1,
+        "natc_ss": "(((((((............(((((((((..((((((((((.((((((..((((.............)))).....((((.....))))..................((((((.......)))))).......................................................................................................................((....)).............................))))))....))))))))))...)))))))))...(((((.......))))))))))))....",
+        "natc": -38.5,
+        "mfe_ss": "(((((((...(((((....((((((.(((..(...((((((((((((....(((((..((((......((((((.....))))))))))..)))))......))))..))))))))...)..).))))))))...)))))..(((((((.((((.............)))).)))))))..(((((((..(.(((((.((((((((.(.......(((((.....((..((((((..((((....))))..))))))..))....))))).......))))))))).)))))))))))))....((((..((((((....))))))...)))))))))))....",
+        "mfe": -84.3,
+        "dist_nat_subopt": 196.92162509497157,
+        "dist_natc_subopt": 147.7306183121758,
+        "native_e": 400038.09,
+        "dist_nat_mfe": 197,
+        "dist_natc_mfe": 148,
+        "dist_nat_natc": 71,
+        "dist_nat_tend": 171.65699999999998,
+        "dist_nat_equ": 195.9993,
+        "dist_natc_tend": 122.65699999999998,
+        "dist_natc_equ": 146.9993,
+        "dist_mfe_tend": 103.639,
+        "dist_subopt_tend": 108.31471024808822,
+        "dist_nat_tend_rev": 187.5791,
+        "dist_nat_equ_rev": 196.0,
+        "dist_natc_tend_rev": 131.56790000000004,
+        "dist_natc_equ_rev": 147.0,
+        "dist_mfe_tend_rev": 183.7845,
+        "dist_subopt_tend_rev": 184.27102568199973
+    }
+}

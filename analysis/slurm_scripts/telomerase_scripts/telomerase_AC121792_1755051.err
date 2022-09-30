@@ -1,0 +1,30 @@
+WARNING: Removing non-canonical base pair UC (72,74) from constraint
+WARNING: Removing non-canonical base pair AC (69,77) from constraint
+WARNING: Removing non-canonical base pair GG (68,78) from constraint
+WARNING: Removing non-canonical base pair GA (56,86) from constraint
+WARNING: Removing non-canonical base pair CA (54,88) from constraint
+WARNING: Removing non-canonical base pair GG (53,89) from constraint
+WARNING: Removing non-canonical base pair CA (52,95) from constraint
+WARNING: Removing non-canonical base pair CC (51,96) from constraint
+WARNING: Removing non-canonical base pair CC (50,97) from constraint
+WARNING: Removing non-canonical base pair UC (39,100) from constraint
+WARNING: Removing non-canonical base pair UC (30,103) from constraint
+WARNING: Removing non-canonical base pair GA (29,136) from constraint
+WARNING: Removing non-canonical base pair GA (28,137) from constraint
+WARNING: Removing non-canonical base pair GG (27,139) from constraint
+WARNING: Removing non-canonical base pair UU (26,140) from constraint
+WARNING: bases 26 and 140 (UU) can't pair!
+WARNING: bases 27 and 139 (GG) can't pair!
+WARNING: bases 28 and 137 (GA) can't pair!
+WARNING: bases 29 and 136 (GA) can't pair!
+WARNING: bases 30 and 103 (UC) can't pair!
+WARNING: bases 39 and 100 (UC) can't pair!
+WARNING: bases 50 and 97 (CC) can't pair!
+WARNING: bases 51 and 96 (CC) can't pair!
+WARNING: bases 52 and 95 (CA) can't pair!
+WARNING: bases 53 and 89 (GG) can't pair!
+WARNING: bases 54 and 88 (CA) can't pair!
+WARNING: bases 56 and 86 (GA) can't pair!
+WARNING: bases 68 and 78 (GG) can't pair!
+WARNING: bases 69 and 77 (AC) can't pair!
+WARNING: bases 72 and 74 (UC) can't pair!

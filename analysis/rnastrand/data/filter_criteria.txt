@@ -1,0 +1,8 @@
+PDB_f: length: 40-200~
+CRW_f: length: 40-200~, no gaps
+RFA_f: length: 40-200~, no gaps
+SPR_f: length: 40-250, no T
+SRP_f: length: 40-220~, no gaps
+ASE_f: length: 40-250~, no gaps
+
+TMR not suitable

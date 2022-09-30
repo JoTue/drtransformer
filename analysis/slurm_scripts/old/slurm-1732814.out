@@ -1,0 +1,37 @@
+WARNING: Removing non-canonical base pair CU (2,54) from constraint
+WARNING: bases 2 and 54 (CU) can't pair!
+WARNING: Removing non-canonical base pair CA (16,22) from constraint
+WARNING: Removing non-canonical base pair GA (11,33) from constraint
+WARNING: Removing non-canonical base pair AG (40,61) from constraint
+WARNING: Removing non-canonical base pair AA (39,62) from constraint
+WARNING: bases 11 and 33 (GA) can't pair!
+WARNING: bases 16 and 22 (CA) can't pair!
+WARNING: bases 39 and 62 (AA) can't pair!
+WARNING: bases 40 and 61 (AG) can't pair!
+WARNING: Removing non-canonical base pair AA (14,22) from constraint
+WARNING: Removing non-canonical base pair CC (33,39) from constraint
+WARNING: bases 14 and 22 (AA) can't pair!
+WARNING: bases 33 and 39 (CC) can't pair!
+WARNING: Removing non-canonical base pair AC (8,23) from constraint
+WARNING: Removing non-canonical base pair AG (7,24) from constraint
+WARNING: Removing non-canonical base pair GA (6,25) from constraint
+WARNING: bases 6 and 25 (GA) can't pair!
+WARNING: bases 7 and 24 (AG) can't pair!
+WARNING: bases 8 and 23 (AC) can't pair!
+1/4, RFA_00449.dp
+2/4, PDB_01116.dp
+3/4, PDB_00999.dp
+4/4, PDB_00088.dp
+/var/spool/slurmd/job1732814/slurm_script: line 12: thisisanerror: command not found
+WARNING: Removing non-canonical base pair AC (48,59) from constraint
+WARNING: Removing non-canonical base pair UU (45,61) from constraint
+WARNING: Removing non-canonical base pair GA (10,68) from constraint
+WARNING: Removing non-canonical base pair AG (5,73) from constraint
+WARNING: bases 5 and 73 (AG) can't pair!
+WARNING: bases 10 and 68 (GA) can't pair!
+WARNING: bases 45 and 61 (UU) can't pair!
+WARNING: bases 48 and 59 (AC) can't pair!
+1/3, RFA_00640.dp
+2/3, RFA_00641.dp
+3/3, RFA_00642.dp
+/var/spool/slurmd/job1732814/slurm_script: line 15: ../scripts/analyze_db_cliierror.py: No such file or directory

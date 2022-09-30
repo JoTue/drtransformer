@@ -1,0 +1,18 @@
+WARNING: Removing non-canonical base pair CA (247,249) from constraint
+WARNING: Removing non-canonical base pair UC (238,253) from constraint
+WARNING: Removing non-canonical base pair UC (232,261) from constraint
+WARNING: Removing non-canonical base pair GG (231,262) from constraint
+WARNING: Removing non-canonical base pair GA (230,263) from constraint
+WARNING: bases 230 and 263 (GA) can't pair!
+WARNING: bases 231 and 262 (GG) can't pair!
+WARNING: bases 232 and 261 (UC) can't pair!
+WARNING: bases 238 and 253 (UC) can't pair!
+WARNING: bases 247 and 249 (CA) can't pair!
+WARNING: Removing non-canonical base pair UC (185,194) from constraint
+WARNING: Removing non-canonical base pair GA (184,197) from constraint
+WARNING: Removing non-canonical base pair AA (183,198) from constraint
+WARNING: Removing non-canonical base pair CC (182,199) from constraint
+WARNING: bases 182 and 199 (CC) can't pair!
+WARNING: bases 183 and 198 (AA) can't pair!
+WARNING: bases 184 and 197 (GA) can't pair!
+WARNING: bases 185 and 194 (UC) can't pair!

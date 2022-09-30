@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#SBATCH --job-name=tmRNA_Acti.naes._TRW-240017_1-371
+#SBATCH --ntasks-per-node=16
+#SBATCH --ntasks-per-core=1
+#SBATCH --mem=8G
+#SBATCH --account=p71475
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=a01640204@unet.univie.ac.at
+#SBATCH --output=tmRNA_Acti.naes._TRW-240017_1-371_%j.out
+#SBATCH --error=tmRNA_Acti.naes._TRW-240017_1-371_%j.err
+
+
+../../scripts/analyze_db_cli.py -i ../../rnastructure/data/tmRNA_separate/tmRNA_Acti.naes._TRW-240017_1-371.db -o ../../slurm_out/tmRNA/ --o-prune 0.1 --t-fast 0.002

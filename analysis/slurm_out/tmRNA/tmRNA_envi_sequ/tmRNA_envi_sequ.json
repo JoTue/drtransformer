@@ -1,0 +1,31 @@
+{
+    "tmRNA_envi.sequ._TRW-356-1_1-289": {
+        "seq": "GGGGGCGAAACAGGAUCGACGAGGGUGUAAAGAGCGACUUUUUGUUCGGUAUUGUACCACCGUUAUCGGGCUAAACUUGUAGUUGCAAAUGACAACUAUGCGGAAGCUCGUCUCGCUGCUUAAUUGCGGUGUGACACUUCACAUUAAGCCCUAGAGGGUCGCACUUCUAGGCGGGGUUCGGAGGUACCUGGCAACAGAAACCUCCACUUGCUGCGCAAGCAGCUAUGACAAUAAACGAGCGUUGCAAUAAACCAUUCGGACCCGGGGGCGGUACCCGGCGCCUCCACCA",
+        "nat_ss": "(((((((............(((.(((.((...((((..(.((((((((((.(.((.(.)))).....).)).)............................(..((.(.(((.((((((......)))))).)))).))..).......(((((((.(...)..)))))))..((((..(((((())))..........))))))....(((((....)))))...)))))...).)..))))....)).)))..)))...(((((.......))))))))))))....",
+        "seqlen": 289,
+        "N_count": 0,
+        "long_unpaired": 0,
+        "natc_ss": "(((((((............(((((((......((((.....(((((................................((((((((....).)))))))..........(((.((((((......)))))).)))............(.((((((((......))))))))).....................................(((((....)))))...)))))........)))).......))).))))...(((((.......))))))))))))....",
+        "natc": -73.6,
+        "mfe_ss": "(((((((......(((.((((..((((((..((((((....))))))..)))...)))..)))))))(((((...(.(((((((((....).)))))))).)..)))))(((.((((((......)))))).)))...............(((((((......)))))))((((.((((((((((..(((....)))..))))))....(((((....))))).............)))).))))......((....))..(((((.......))))))))))))....",
+        "mfe": -109.3,
+        "dist_nat_subopt": 99.95012036847416,
+        "dist_natc_subopt": 65.96222123607029,
+        "native_e": 199958.41,
+        "dist_nat_mfe": 97,
+        "dist_natc_mfe": 63,
+        "dist_nat_natc": 38,
+        "dist_nat_tend": 103.02910582116425,
+        "dist_nat_equ": 98.4858,
+        "dist_natc_tend": 71.5742148429686,
+        "dist_natc_equ": 66.4446,
+        "dist_mfe_tend": 31.521204240848174,
+        "dist_subopt_tend": 48.82669806940741,
+        "dist_nat_tend_rev": 125.6623311655828,
+        "dist_nat_equ_rev": 100.226,
+        "dist_natc_tend_rev": 95.30515257628814,
+        "dist_natc_equ_rev": 68.04,
+        "dist_mfe_tend_rev": 53.13276638319161,
+        "dist_subopt_tend_rev": 62.87823873450302
+    }
+}

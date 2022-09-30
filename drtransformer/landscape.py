@@ -51,6 +51,7 @@ class TrafoLandscape:
         self.fpwm = 0 # set directly
         self.mfree = 6 # set directly
         self.transcript_length = 0 # set directly, updated automatically
+        self.rev_transcription = False # set True by setting --reversed-transcription command line argument
 
     @property
     def RT(self):
@@ -62,7 +63,10 @@ class TrafoLandscape:
 
     @property
     def transcript(self):
-        return self.sequence[0:self.transcript_length]
+        if not self.rev_transcription:
+            return self.sequence[0:self.transcript_length]
+        else:
+            return self.sequence[-self.transcript_length:]
 
     @property
     def nodes(self):
@@ -199,9 +203,21 @@ class TrafoLandscape:
         minh = self.minh
 
         # Calculate MFE of current transcript.
-        mfess, _ = fc.backtrack(len(seq))
-        future = '.' * (len(fseq) - len(seq))
-        mfess = mfess + future
+        # (backtrack() and mfe() can yield slightly different results)
+        if not self.rev_transcription:
+            # original version using backtrack():
+            # mfess, _ = fc.backtrack(len(seq))
+
+            # using mfe() to be better comparable to reversed mode:
+            fc_tmp = RNA.fold_compound(seq, self.md)
+            mfess, _ = fc_tmp.mfe()
+            future = '.' * (len(fseq) - len(seq))
+            mfess = mfess + future
+        else:
+            fc_tmp = RNA.fold_compound(seq, self.md)
+            mfess, _ = fc_tmp.mfe()
+            future = '.' * (len(fseq) - len(seq))
+            mfess = future + mfess
 
         i_time = datetime.now()
 
@@ -214,7 +230,10 @@ class TrafoLandscape:
         else: 
             md = self.md
             fpwm = self.fpwm
-            parents = [x[0:len(seq)] for x in self.active_local_mins]
+            if not self.rev_transcription:
+                parents = [x[0:len(seq)] for x in self.active_local_mins]
+            else:
+                parents = [x[-len(seq):] for x in self.active_local_mins]
             fraying_nodes = find_fraying_neighbors(seq, md, parents, mfree = mfree)
 
             # 1) Add all new structures to the set of nodes.
@@ -229,7 +248,10 @@ class TrafoLandscape:
 
             for fns in fraying_nodes.values():
                 for fn in fns:
-                    fn += future
+                    if not self.rev_transcription:
+                        fn += future
+                    else:
+                        fn = future + fn
                     if fn not in self.nodes:
                         self.addnode(fn, structure = fn)
                         nn.add(fn)
@@ -240,22 +262,32 @@ class TrafoLandscape:
 
             f_time = datetime.now()
 
-            ndata = {n[0:len(seq)]: d for n, d in self.nodes.items() if d['active']} 
+            if not self.rev_transcription:
+                ndata = {n[0:len(seq)]: d for n, d in self.nodes.items() if d['active']}
+            else:
+                ndata = {n[-len(seq):]: d for n, d in self.nodes.items() if d['active']}
             gnodes, gedges = get_guide_graph(seq, md, ndata.keys())
             assert all(ss != '' for (ss, en) in gnodes)
 
             for (ss, en) in gnodes:
-                if ss + future not in self.nodes:
-                    self.addnode(ss + future, structure = ss+future)
-                    nn.add(ss + future)
-                elif not self.nodes[ss + future]['active']:
-                    on.add(ss + future)
-                    self.nodes[ss + future]['active'] = True
+                if not self.rev_transcription:
+                    ss_and_future = ss + future
+                else:
+                    ss_and_future = future + ss
+                if ss_and_future not in self.nodes:
+                    self.addnode(ss_and_future, structure = ss_and_future)
+                    nn.add(ss_and_future)
+                elif not self.nodes[ss_and_future]['active']:
+                    on.add(ss_and_future)
+                self.nodes[ss_and_future]['active'] = True
             ndata = {n: d for n, d in self.nodes.items() if d['active']} 
 
             lgedges = set()
             for (x, y) in gedges:
-                lgedges.add((x+future, y+future))
+                if not self.rev_transcription:
+                    lgedges.add((x+future, y+future))
+                else:
+                    lgedges.add((future+x, future+y))
             gedges = lgedges
 
             g_time = datetime.now()

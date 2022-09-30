@@ -1,0 +1,37 @@
+WARNING: Removing non-canonical base pair UC (115,116) from constraint
+WARNING: vrna_hc_add_from_db: Pairing partners (114, 117) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: Removing non-canonical base pair CC (112,119) from constraint
+WARNING: Removing non-canonical base pair AG (111,120) from constraint
+WARNING: Removing non-canonical base pair GG (110,122) from constraint
+WARNING: Removing non-canonical base pair UC (109,123) from constraint
+WARNING: Removing non-canonical base pair GA (107,127) from constraint
+WARNING: Removing non-canonical base pair GA (98,128) from constraint
+WARNING: Removing non-canonical base pair CC (92,137) from constraint
+WARNING: Removing non-canonical base pair CU (90,139) from constraint
+WARNING: Removing non-canonical base pair UC (81,142) from constraint
+WARNING: Removing non-canonical base pair CC (79,144) from constraint
+WARNING: Removing non-canonical base pair CA (72,174) from constraint
+WARNING: Removing non-canonical base pair GA (71,175) from constraint
+WARNING: Removing non-canonical base pair GA (70,176) from constraint
+WARNING: Removing non-canonical base pair AG (69,178) from constraint
+WARNING: Removing non-canonical base pair UU (68,179) from constraint
+WARNING: Removing non-canonical base pair CA (66,181) from constraint
+WARNING: Removing non-canonical base pair GG (65,182) from constraint
+WARNING: bases 65 and 182 (GG) can't pair!
+WARNING: bases 66 and 181 (CA) can't pair!
+WARNING: bases 68 and 179 (UU) can't pair!
+WARNING: bases 69 and 178 (AG) can't pair!
+WARNING: bases 70 and 176 (GA) can't pair!
+WARNING: bases 71 and 175 (GA) can't pair!
+WARNING: bases 72 and 174 (CA) can't pair!
+WARNING: bases 79 and 144 (CC) can't pair!
+WARNING: bases 81 and 142 (UC) can't pair!
+WARNING: bases 90 and 139 (CU) can't pair!
+WARNING: bases 92 and 137 (CC) can't pair!
+WARNING: bases 98 and 128 (GA) can't pair!
+WARNING: bases 107 and 127 (GA) can't pair!
+WARNING: bases 109 and 123 (UC) can't pair!
+WARNING: bases 110 and 122 (GG) can't pair!
+WARNING: bases 111 and 120 (AG) can't pair!
+WARNING: bases 112 and 119 (CC) can't pair!
+WARNING: bases 115 and 116 (UC) can't pair!

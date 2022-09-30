@@ -1,0 +1,1 @@
+cat tmp_rev/drtr_rev-50_rates.txt | treekin --p0 1=0.7305226439252003 --p0 2=0.2694773560747996

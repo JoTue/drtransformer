@@ -1,0 +1,27 @@
+WARNING: Removing non-canonical base pair CA (440,496) from constraint
+WARNING: vrna_hc_add_from_db: Pairing partners (522, 524) violate minimum loop size settings of 3nt, omitting constraint
+WARNING: Removing non-canonical base pair CC (513,528) from constraint
+WARNING: Removing non-canonical base pair UC (512,536) from constraint
+WARNING: Removing non-canonical base pair GA (506,539) from constraint
+WARNING: Removing non-canonical base pair GG (505,540) from constraint
+WARNING: bases 440 and 496 (CA) can't pair!
+WARNING: bases 505 and 540 (GG) can't pair!
+WARNING: bases 506 and 539 (GA) can't pair!
+WARNING: bases 512 and 536 (UC) can't pair!
+WARNING: bases 513 and 528 (CC) can't pair!
+WARNING: Removing non-canonical base pair CA (303,306) from constraint
+WARNING: Removing non-canonical base pair AC (266,309) from constraint
+WARNING: Removing non-canonical base pair GG (265,315) from constraint
+WARNING: Removing non-canonical base pair CU (264,316) from constraint
+WARNING: Removing non-canonical base pair UC (263,317) from constraint
+WARNING: Removing non-canonical base pair GG (262,318) from constraint
+WARNING: Removing non-canonical base pair GA (16,319) from constraint
+WARNING: Removing non-canonical base pair UC (12,320) from constraint
+WARNING: bases 12 and 320 (UC) can't pair!
+WARNING: bases 16 and 319 (GA) can't pair!
+WARNING: bases 262 and 318 (GG) can't pair!
+WARNING: bases 263 and 317 (UC) can't pair!
+WARNING: bases 264 and 316 (CU) can't pair!
+WARNING: bases 265 and 315 (GG) can't pair!
+WARNING: bases 266 and 309 (AC) can't pair!
+WARNING: bases 303 and 306 (CA) can't pair!

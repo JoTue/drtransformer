@@ -82,6 +82,11 @@ def parse_drtrafo_args(parser):
             help = """Evenly space output *--t-log* times after transcription
             on a logarithmic time scale.""")
 
+    output.add_argument("--t-list", nargs="+", default = '', metavar = '<str>',
+            help = """List of times after transcription shown in drf-file. 
+            Highest time replaces end time (--t-end) in log-file.
+            (--t-end and --t-log are ignored)""")
+
     output.add_argument("--profile", action = "store_true", 
             # prints datetimes and statprof data for profiling analysis
             help = argparse.SUPPRESS)
@@ -106,6 +111,9 @@ def parse_drtrafo_args(parser):
 
     trans.add_argument("--stop", type = int, default = None, metavar = '<int>',
             help = "Stop transcription at this nucleotide")
+    
+    trans.add_argument("--reversed-transcription", action = "store_true", 
+            help = "Perform reversed transcription (3' to 5' direction).")
 
     ###########################
     # DrTransformer algorithm #
@@ -353,6 +361,7 @@ def main():
         fdata += "# --t-end: {} sec\n".format(args.t_end)
         fdata += "# --start: {}\n".format(args.start)
         fdata += "# --stop: {}\n".format(args.stop)
+        fdata += "# --reversed-transcription: {}\n".format(args.reversed_transcription)
         fdata += "#\n"
         fdata += "# Algorithm parameters:\n"
         fdata += "# --o-prune: {}\n".format(args.o_prune)
@@ -389,6 +398,7 @@ def main():
     TL.mfree = args.mfree
     TL.minh = int(round(args.minh*100))
     TL.transcript_length = args.start - 1
+    TL.rev_transcription = args.reversed_transcription
 
     psites = np.full(args.stop+1, args.t_ext, dtype = float)
     #NOTE: psites[0] is useless
@@ -405,6 +415,9 @@ def main():
 
     time = 0
     for tlen in range(args.start, args.stop+1):
+        # Spacer for reversed-transcription output:
+        spacer = " " * (args.stop - tlen)
+
         itime = datetime.now()
         logger.info(f'** Transcription step {tlen} **')
         logger.info((f'Before expansion:      '
@@ -439,8 +452,12 @@ def main():
                 times = np.array(np.logspace(np.log10(t1), np.log10(t8), num=args.t_log))
         else:
             lin_times = np.array(np.linspace(t0, t1, args.t_lin))
-            log_times = np.array(np.logspace(np.log10(t1), np.log10(t8), num=args.t_log))
-            log_times = np.delete(log_times, 0)
+
+            if tlen == args.stop and args.t_list:
+                log_times = sorted(list(map(float, args.t_list)))
+            else:
+                log_times = np.array(np.logspace(np.log10(t1), np.log10(t8), num=args.t_log))
+                log_times = np.delete(log_times, 0)
             times = np.concatenate([lin_times, log_times])
         if tlen != args.start:
             times = np.delete(times, 0)
@@ -494,7 +511,10 @@ def main():
                         continue
                     ne = TL.nodes[node]['energy']/100
                     all_courses[ni] = [(tt, occu)]
-                    fdata = f"{ni} {tt:03.9f} {occu:03.4f} {node[:tlen]} {ne:6.2f}\n"
+                    if not args.reversed_transcription:
+                        fdata = f"{ni} {tt:03.9f} {occu:03.4f} {node[:tlen]} {ne:6.2f}\n"
+                    else:
+                        fdata = f"{ni} {tt:03.9f} {occu:03.4f} {spacer + node[-tlen:]} {ne:6.2f}\n"
                     write_output(fdata, stdout = (args.stdout == 'drf'), fh = dfh)
             ti, p8 = t, pt
         keep = [n for e, n in enumerate(snodes) if pf[e] > args.o_prune] if args.o_prune else []
@@ -524,7 +544,10 @@ def main():
                     if lmins:
                         ni +=  f" -> {', '.join(lmins)}"
                 ax = ' ' if np.isclose(po, no, atol=1e-4) else '+' if no > po else '-'
-                fdata = f"{tlen:4d} {e+1:4d} {node[:tlen]} {ne:6.2f} {ax}[{po:6.4f} -> {no:6.4f}] ID = {ni}\n"
+                if not args.reversed_transcription:
+                    fdata = f"{tlen:4d} {e+1:4d} {node[:tlen]} {ne:6.2f} {ax}[{po:6.4f} -> {no:6.4f}] ID = {ni}\n"
+                else:
+                    fdata = f"{tlen:4d} {e+1:4d} {spacer + node[-tlen:]} {ne:6.2f} {ax}[{po:6.4f} -> {no:6.4f}] ID = {ni}\n"
                 write_output(fdata, stdout = (args.stdout == 'log'), fh = lfh)
         stime = datetime.now()
 
@@ -577,7 +600,10 @@ def main():
                 if nids:
                     ni +=  f" + {' + '.join(nids)}"
                 ax = ' ' if np.isclose(no, eo, atol=1e-4) else '+' if eo > no else '-'
-                fdata += f"{tlen:4d} {e+1:4d} {node[:tlen]} {ne:6.2f} {no:6.4f} {ax}[t8: {eo:6.4f}] ID = {ni}\n"
+                if not args.reversed_transcription:
+                    fdata += f"{tlen:4d} {e+1:4d} {node[:tlen]} {ne:6.2f} {no:6.4f} {ax}[t8: {eo:6.4f}] ID = {ni}\n"
+                else:
+                    fdata += f"{tlen:4d} {e+1:4d} {spacer + node[-tlen:]} {ne:6.2f} {no:6.4f} {ax}[t8: {eo:6.4f}] ID = {ni}\n"
             write_output(fdata, stdout = (args.stdout == 'log'), fh = lfh)
         else:
             for e, node in enumerate(snodes):
@@ -586,7 +612,10 @@ def main():
                 eo = pe[e]
                 ni = TL.nodes[node]['identity']
                 ax = ' ' if np.isclose(no, eo, atol=1e-4) else '+' if eo > no else '-'
-                fdata += f"{tlen:4d} {e+1:4d} {node[:tlen]} {ne:6.2f} {no:6.4f} {ax}[t8: {eo:6.4f}] ID = {ni}\n"
+                if not args.reversed_transcription:
+                    fdata += f"{tlen:4d} {e+1:4d} {node[:tlen]} {ne:6.2f} {no:6.4f} {ax}[t8: {eo:6.4f}] ID = {ni}\n"
+                else:
+                    fdata += f"{tlen:4d} {e+1:4d} {spacer + node[-tlen:]} {ne:6.2f} {no:6.4f} {ax}[t8: {eo:6.4f}] ID = {ni}\n"
             write_output(fdata, stdout=(args.stdout == 'log'), fh = lfh)
 
     # CLEANUP file handles
