@@ -359,6 +359,7 @@ def main():
         fdata += "# Co-transcriptional folding parameters:\n"
         fdata += "# --t-ext: {} sec\n".format(args.t_ext)
         fdata += "# --t-end: {} sec\n".format(args.t_end)
+        fdata += "# --t-list: {}\n".format(args.t_list)
         fdata += "# --start: {}\n".format(args.start)
         fdata += "# --stop: {}\n".format(args.stop)
         fdata += "# --reversed-transcription: {}\n".format(args.reversed_transcription)
