@@ -1,15 +1,18 @@
 #!/bin/bash
 
-#SBATCH --job-name=ar_drtr
+#SBATCH --job-name=0_d
 #SBATCH --partition=skylake_0096
 #SBATCH --ntasks-per-node=16
 #SBATCH --ntasks-per-core=1
+#SBATCH --output=log/0_d.out
+#SBATCH --error=log/0_d.err
 
 NTHREADS=16
 
 DATASET=$1  # e.g. "tRNA.db"
 ID1=$2
 ID2=$3
+IDS_PER_JOB=$4
 
 LF=log
 
@@ -20,4 +23,5 @@ then
 fi
 
 # compute ID1 to ID2 (both inclusive)
-seq $ID1 $IDS_PER_JOB $ID2 | xargs -I{} --max-procs=$NTHREADS bash -c "sbatch -o $LF/%A_%a.out -e $LF/%A_%a.err -J drtr-{}-$DATASET -a $ID1-$ID2 -p skylake_0096 --nice=1000 bin/drtransformer.py data/$DATASET --id1 {} --id2 $(($(($ID1 + $IDS_PER_JOB - 1)) < $ID2 ? $(($ID1 + $IDS_PER_JOB - 1)) : $ID2))"
+seq $ID1 $IDS_PER_JOB $ID2 | xargs -I{} --max-procs=$NTHREADS bash -c "sbatch -o $LF/d_%A.out -e $LF/d_%A.err -J d-{}-$DATASET -p skylake_0096 --nice=0 bin/drtransformer.py data/$DATASET --id1 {} --id-end $ID2 --ids-per-job $IDS_PER_JOB"
+

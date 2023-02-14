@@ -1,15 +1,18 @@
 #!/bin/bash
 
-#SBATCH --job-name=ar_analyze
+#SBATCH --job-name=1_a
 #SBATCH --partition=skylake_0096
-#SBATCH --ntasks-per-node=16
+#SBATCH --ntasks-per-node=1
 #SBATCH --ntasks-per-core=1
+#SBATCH --output=log/%A.out
+#SBATCH --error=log/%A.err
 
-NTHREADS=16
+NTHREADS=1
 
 DATASET=$1  # e.g. "tRNA.db"
 ID1=$2
 ID2=$3
+IDS_PER_JOB=$4
 
 LF=log
 
@@ -20,4 +23,4 @@ then
 fi
 
 # analyze ID1 to ID2 (both inclusive)
-seq $ID1 $IDS_PER_JOB $ID2 | xargs -I{} --max-procs=$NTHREADS bash -c "sbatch -o $LF/%A_%a.out -e $LF/%A_%a.err -J analyze-{}-$DATASET -a $ID1-$ID2 -p skylake_0096 --nice=1000 bin/analyze.py data/$DATASET --id1 {} --id2 $(($(($ID1 + $IDS_PER_JOB - 1)) < $ID2 ? $(($ID1 + $IDS_PER_JOB - 1)) : $ID2)) --tmp $TMPDIR"
+seq $ID1 $IDS_PER_JOB $ID2 | xargs -I{} --max-procs=$NTHREADS bash -c "bin/analyze.py data/$DATASET --id1 {} --id-end $ID2 --ids-per-job $IDS_PER_JOB --tmp analysis_tmp"
