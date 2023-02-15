@@ -4,8 +4,8 @@
 #SBATCH --partition=skylake_0096
 #SBATCH --ntasks-per-node=1
 #SBATCH --ntasks-per-core=1
-#SBATCH --output=log/%A.out
-#SBATCH --error=log/%A.err
+#SBATCH --output=log/1_%x_%j.out
+#SBATCH --error=log/1_%x_%j.err
 
 NTHREADS=1
 

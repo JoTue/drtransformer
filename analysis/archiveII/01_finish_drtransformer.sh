@@ -1,11 +1,11 @@
 #!/bin/bash
 
-#SBATCH --job-name=01_finish
+#SBATCH --job-name=01_f
 #SBATCH --partition=skylake_0096
 #SBATCH --ntasks-per-node=16
 #SBATCH --ntasks-per-core=1
-#SBATCH --output=log/01_f.out
-#SBATCH --error=log/01_f.err
+#SBATCH --output=log/01_%x_%j.out
+#SBATCH --error=log/01_%x_%j.err
 
 NTHREADS=16
 
@@ -25,4 +25,4 @@ fi
 
 # compute ID1 to ID2 (both inclusive)
 # seq $ID1 $IDS_PER_JOB $ID2 | xargs -I{} --max-procs=$NTHREADS bash -c "bin/drtransformer.py data/$DATASET --id1 {} --id-end $ID2 --ids-per-job $IDS_PER_JOB"
-bin/get_missing_ids.py data/$DATASET drtr_results/$DATASET_name --id1 $ID1 --id2 $ID2 | xargs -I{} --max-procs=$NTHREADS bash -c "bin/drtransformer.py data/$DATASET --id {} --print-only-id $print_only_id"
+bin/get_missing_ids.py data/$DATASET drtr_results/$DATASET_name --id1 $ID1 --id2 $ID2 | xargs -I{} --max-procs=$NTHREADS bash -c "bin/drtransformer.py data/$DATASET --id {}"
