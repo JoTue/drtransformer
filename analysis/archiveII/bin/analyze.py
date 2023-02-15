@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 """Command line script to analyze a database in dot-bracket format.
 It calculates the distances of the normal-DrTransformer/reversed-DrTransformer/RNAsubopt structures to the native structure."""
