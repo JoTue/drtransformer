@@ -14,4 +14,4 @@ ID1=$2
 ID2=$3
 
 # compute ID1 to ID2 (both inclusive)
-bin/get_missing_ids_from_file.py $DATASET --id1 $ID1 --id2 $ID2 | xargs -I{} --max-procs=$NTHREADS bash -c "bin/drtransformer.py data/$DATASET --id {}"
+bin/get_missing_ids_from_file.py $DATASET_name --id1 $ID1 --id2 $ID2 | xargs -I{} --max-procs=$NTHREADS bash -c "bin/drtransformer.py data/$DATASET --id {}"
