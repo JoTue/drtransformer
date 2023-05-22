@@ -133,19 +133,30 @@ def combined_plots(rna_classes=["5s", "16s", "23s", "grpI", "grpII", "RNaseP", "
         d[rna_class] = {ts: {st: {ms: {"values": [], "mean": None, "stdev": None, "median": None} for ms in MEASUREMENTS} for st in STRUCTURES} for ts in TIMESTAMPS}  # stores statistics
 
         for header in db:
+            nan_flag = False
+            d_temp = {}
+            d_temp[rna_class] = {ts: {st: {ms: None for ms in MEASUREMENTS} for st in STRUCTURES} for ts in TIMESTAMPS}
             for ts in TIMESTAMPS:
                 for st in STRUCTURES:
                     for ms in MEASUREMENTS:
                         try:
                             val = float(db[header][ts][st][ms])
                             if math.isnan(val):
-                                val = 0  # TODO: !!!
-                                if ms == "MCC":
-                                    print(header, ts, st, ms)
-                            d[rna_class][ts][st][ms]["values"].append(val)
+                                # val = 0  # TODO: !!!
+                                if ms == MS:
+                                    # print("Removing seq:", header, ts, st, ms)
+                                    nan_flag = True
+                            d_temp[rna_class][ts][st][ms] = val
                         except KeyError:  # for reversed-st in "eq"
                             pass
-
+            if not nan_flag:
+                for ts in TIMESTAMPS:
+                    for st in STRUCTURES:
+                        for ms in MEASUREMENTS:
+                            d[rna_class][ts][st][ms]["values"].append(d_temp[rna_class][ts][st][ms])
+            else:
+                print("Seq with nan in 'MS'", header)
+        
         for ts in TIMESTAMPS:
             for st in STRUCTURES:
                 for ms in MEASUREMENTS:
@@ -153,6 +164,8 @@ def combined_plots(rna_classes=["5s", "16s", "23s", "grpI", "grpII", "RNaseP", "
                         d[rna_class][ts][st][ms]["mean"] = statistics.mean(d[rna_class][ts][st][ms]["values"])
                         d[rna_class][ts][st][ms]["stdev"] = statistics.stdev(d[rna_class][ts][st][ms]["values"])
                         d[rna_class][ts][st][ms]["median"] = statistics.median(d[rna_class][ts][st][ms]["values"])
+                    except TypeError: # removed because includes nan
+                        pass
                     except statistics.StatisticsError:  # for reversed-st in "eq"
                         pass
 
@@ -164,8 +177,12 @@ def combined_plots(rna_classes=["5s", "16s", "23s", "grpI", "grpII", "RNaseP", "
         data_diff.append([x-y for x,y in zip(data_nat[i], data_nat_rev[i])])
     data_eq = [d[rna_class]["eq"]["nat"][MS]["values"] for rna_class in rna_classes]
 
-    # boxplot, https://stackoverflow.com/questions/16592222/matplotlib-group-boxplots
-    ticks = rna_classes
+    tick_names = rna_classes.copy()
+    if "telomerase" in tick_names:
+        tick_names[tick_names.index("telomerase")] = "telo."
+
+    # boxplot (without equ), https://stackoverflow.com/questions/16592222/matplotlib-group-boxplots
+    ticks = tick_names
 
     def set_box_color(bp, color):
         plt.setp(bp['boxes'], color=color)
@@ -174,6 +191,36 @@ def combined_plots(rna_classes=["5s", "16s", "23s", "grpI", "grpII", "RNaseP", "
         plt.setp(bp['medians'], color=color)
 
     plt.figure()
+
+    bpl = plt.boxplot(data_nat, positions=np.array(range(len(data_nat)))*2-0.34, sym='', widths=0.55)
+    bpr = plt.boxplot(data_nat_rev, positions=np.array(range(len(data_nat_rev)))*2+0.34, sym='', widths=0.55)
+    set_box_color(bpl, '#D7191C') # colors are from http://colorbrewer2.org/
+    set_box_color(bpr, '#2C7BB6')
+
+    # draw temporary red and blue lines and use them to create a legend
+    plt.plot([], c='#D7191C', label='normal')
+    plt.plot([], c='#2C7BB6', label='reversed')
+    plt.legend()
+
+    plt.xticks(range(0, len(ticks) * 2, 2), ticks)
+    # plt.xlim(-2, len(ticks)*2)
+    # plt.ylim(0, 8)
+    # plt.tight_layout()
+    plt.title(f"Boxplot\n{TS}s")
+    plt.ylabel(f"{MS}")
+    plt.savefig(f'plots/boxplot/boxplot_{MS}_{TS}s.png')
+    plt.close()
+    
+    # boxplot, https://stackoverflow.com/questions/16592222/matplotlib-group-boxplots
+    ticks = tick_names
+
+    def set_box_color(bp, color):
+        plt.setp(bp['boxes'], color=color)
+        plt.setp(bp['whiskers'], color=color)
+        plt.setp(bp['caps'], color=color)
+        plt.setp(bp['medians'], color=color)
+
+    plt.figure(figsize=(8,4))
 
     bpl = plt.boxplot(data_nat, positions=np.array(range(len(data_nat)))*3-0.72, sym='', widths=0.6)
     bpm = plt.boxplot(data_nat_rev, positions=np.array(range(len(data_nat_rev)))*3+0.0, sym='', widths=0.6)
@@ -192,13 +239,13 @@ def combined_plots(rna_classes=["5s", "16s", "23s", "grpI", "grpII", "RNaseP", "
     plt.xlim(-3, len(ticks)*3)
     # plt.ylim(0, 8)
     # plt.tight_layout()
-    plt.title(f"MCC: normal vs. reversed direction\n{TS} s")
-    plt.ylabel("MCC")
-    plt.savefig(f'plots/combined_boxplot2_{TS}s.png')
+    plt.title(f"Boxplot\n{TS}s")
+    plt.ylabel(f"{MS}")
+    plt.savefig(f'plots/boxplot_with_equ/boxplot_with_equ_{MS}_{TS}s.png')
     plt.close()
 
     # difference_boxplot
-    ticks = rna_classes
+    ticks = tick_names
 
     def set_box_color(bp, color):
         plt.setp(bp['boxes'], color=color)
@@ -226,9 +273,9 @@ def combined_plots(rna_classes=["5s", "16s", "23s", "grpI", "grpII", "RNaseP", "
     plt.xlim(-2, len(ticks)*2)
     # plt.ylim(0, 8)
     # plt.tight_layout()
-    plt.title(f"MCC: normal vs. reversed direction\n{TS} s")
-    plt.ylabel("MCC difference per RNA (normal - reversed)")
-    plt.savefig(f'plots/difference_boxplot_{TS}s.png')
+    plt.title(f"Boxplot: Difference per RNA (normal - reversed)\n{TS}s")
+    plt.ylabel(f"{MS} difference per RNA (normal - reversed)")
+    plt.savefig(f'plots/difference_boxplot/difference_boxplot_{MS}_{TS}s.png')
     plt.close()
 
 
@@ -255,8 +302,8 @@ def combined_plots(rna_classes=["5s", "16s", "23s", "grpI", "grpII", "RNaseP", "
     transformed_pvals = list(-1*np.log10(1*np.array(pvals)))  # here, no Bonferroni correction
     print(f"{transformed_pvals=}")
 
-    plot_title = f"MCC: normal vs. reversed direction, {TS} s" #@param {type:"string"}
-    x_axis_title = "log2 fold change (MCC: normal/reversed)" #@param {type:"string"}
+    plot_title = f"Volcano plot: normal vs. reversed direction, {TS}s" #@param {type:"string"}
+    x_axis_title = f"log2 fold change ({MS}: normal/reversed)" #@param {type:"string"}
     y_axis_title = "-log10 pvalue" #@param {type:"string"}
     point_radius = 10 #@param {type:"slider", min:1, max:30, step:1}
 
@@ -316,8 +363,8 @@ def combined_plots(rna_classes=["5s", "16s", "23s", "grpI", "grpII", "RNaseP", "
         )
     )
 
-    print("Saving...")
-    fig.write_image(f'plots/volcano_{TS}s_2.png', engine='kaleido')
+    print("Saving volcano...")
+    fig.write_image(f'plots/volcano/volcano_{MS}_{TS}s_3.png', engine='kaleido')
 
 
 def main():
@@ -327,7 +374,7 @@ def main():
         formatter_class = argparse.ArgumentDefaultsHelpFormatter,
         description = 'Analysis of a database in dot-bracket format.')
 
-    parser.add_argument("input", metavar = '<str>',
+    parser.add_argument("--input", metavar = '<str>',
             help = """Path of the input file""")
     parser.add_argument("--rna_classes", nargs='+', default = ["5s", "16s", "23s", "grpI", "grpII", "RNaseP", "srp", "telomerase", "tmRNA", "tRNA"], metavar = '<str>',
             help = """Space-separated list of RNA classes""")
@@ -338,7 +385,9 @@ def main():
 
     # plots(args.input)
 
-    combined_plots(rna_classes=args.rna_classes, TS=args.ts)
+    # combined_plots(rna_classes=args.rna_classes, TS=args.ts)
+    for ts in ["0.04", "1.0", "10.0", "60.0", "600.0", "3600.0", "equilibrium"]:
+        combined_plots(rna_classes=args.rna_classes, TS=ts, MS="bpdis")
  
 if __name__ == '__main__':
     main()
